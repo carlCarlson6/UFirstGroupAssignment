@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Auswertung von Serverzugriffen</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <h1>Auswertung von Serverzugriffen von EPA</h1>
+
+        <div class="block">
+          <h2>HTTP Methoden</h2>
+          <canvas id="methodChart" width="400" height="400"></canvas>
+        </div>
+        <div class="block">
+          <h2>Requests pro Minute</h2>
+          <canvas id="requestsPerMinuteChart" width="400" height="400"></canvas>
+        </div>
+        <div class="block">
+          <h2>Antwortcodes</h2>
+          <canvas id="responseCodeChart" width="400" height="400"></canvas>
+        </div>
+        <div class="block">
+          <h2>Antwortgrösse</h2>
+          <canvas id="documentSizeChart" width="400" height="400"></canvas>
+        </div>
+
+
+        <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <!--
+          TODO: Add libraries here
+        -->
+        <script src="./access_log_EPA_Jul95_parsed.json"></script>
+        <script src="js/epa.js"></script>
+
+    </body>
+</html>
